@@ -1,0 +1,7 @@
+.code{
+   
+    display: grid;
+    width: 10%;
+    grid-template-columns: auto auto auto;
+
+}

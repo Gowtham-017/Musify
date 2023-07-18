@@ -1,0 +1,135 @@
+.body{
+  background-color: white;
+  height: 100vh;
+
+}
+
+.embedd{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 5%;
+  width: 30%;
+}
+
+  /* .song1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border: 1px  white;
+    border-style:inset;
+    position: relative;
+    grid-gap:25px;
+    height: 57px;
+    color: black;
+    padding: 0 16px;
+    background-color: snow;
+
+  } */
+  .song2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border: 1px solid black;
+    position: relative;
+    grid-gap:16px;
+    color: white;
+    padding: 0 16px;
+    background-color:#00008B;
+  }
+
+  .song1:hover{
+    background-color:silver;
+  }
+ 
+  .listname{
+
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    background-image: url("pagebg.jpg");
+    font-size:x-large;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-color:silver;
+  }
+  .playmus{
+    background-color:snow;
+    opacity: 100%;
+    color:black;
+  }
+  
+
+
+  .music-player{
+    width: 100%;
+    display: flex;
+    margin-top:100px ;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  
+  .edit-menu{
+    position: absolute;
+    top: 400px;
+    /* height: 35%; */
+    margin-left: 80px;
+    border-radius: 10%;
+    background-color:rgb(33, 59, 51);
+    border: 1px solid black;
+    padding: 2px 0px 2px 0px;  
+    width: 9%;
+    opacity: 40%;
+  }
+  
+  .edit-menu::before{
+    position: absolute;
+    height: 20px;
+    transform: rotate(90deg);
+  }
+  
+  .edit-menu.active{
+  
+    color: white;
+    justify-content:flex-end;
+    float:inline-start;
+    align-items: center;
+  }
+  
+  .edit-menu.inactive{
+   
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+  }
+  
+
+
+
+.edit-menu :hover {
+  color: rgb(148, 142, 142);
+  cursor: pointer;
+}
+
+
+
+.editItem{
+  display: flex;
+  
+
+}
+
+.editItem img{
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: var(--speed);
+}
+
+.editItem a{
+  max-width: 50px;
+  margin-left: 10px;
+  transition: var(--speed);
+}
